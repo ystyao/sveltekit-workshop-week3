@@ -27,7 +27,7 @@
       const response = await fetch('https://swapi.dev/api/people/');
       if (!response.ok) throw new Error('Holonet Connection Interrupted');
       const data = await response.json();
-      characters = data.results.slice(0, 5); // 只取前5个英雄
+      characters = data.results.slice(0, 7); // 只取前7个英雄
     } catch (e) {
       error = e.message;
     } finally {
